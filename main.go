@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/hcl/hcl/ast"
 	
 )
-func main(){
+func readtf(){
 	fbytes, err:=ioutil.ReadFile("azure.tf")
 	if err!=nil{
 		fmt.Println("error")
@@ -31,3 +31,7 @@ func main(){
 	})
 
 }
+
+func main(){
+	readjson()
+}	
